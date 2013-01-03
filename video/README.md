@@ -14,3 +14,8 @@ Assemble the images above into a video file:
 ```shell
 ffmpeg -i images/%6d.jpg -r 30 -b:v 8000k video.mp4
 ```
+
+Assemble a series of images into a video file, starting at image 10:
+```shell
+ffmpeg -start_number 10 -i images/%6d.jpg -r 30 -b:v 8000k video.mp4
+```
